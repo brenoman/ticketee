@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.14'
 
-gem 'sqlite3'
+gem 'mysql2'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3' #template pra css
@@ -17,7 +17,7 @@ group :test, :development do
 end
 
 group :test do
-  gem 'cucumber-rails'
+  gem 'cucumber-rails', '1.0.6'
   gem 'capybara'
   gem 'database_cleaner'
 end
