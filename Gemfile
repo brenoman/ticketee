@@ -7,6 +7,7 @@ gem 'mysql2'
 group :assets do
   gem 'sass-rails',   '~> 3.2.3' #template pra css
   gem 'coffee-rails', '~> 3.2.1' #ponte entre rails e linguagens coffeescript
+  gem 'dynamic_form'
   gem 'uglifier', '>= 1.0.3'
 end
 
