@@ -130,6 +130,8 @@
     <orderEntry type="library" scope="PROVIDED" name="activeresource (v3.2.14, RVM: ruby-2.0.0-p645) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activesupport (v3.2.14, RVM: ruby-2.0.0-p645) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="arel (v3.0.3, RVM: ruby-2.0.0-p645) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bcrypt (v3.1.10, RVM: ruby-2.0.0-p645) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bcrypt-ruby (v3.1.5, RVM: ruby-2.0.0-p645) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="builder (v3.0.4, RVM: ruby-2.0.0-p645) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bundler (v1.9.9, RVM: ruby-2.0.0-p645) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="capybara (v2.4.4, RVM: ruby-2.0.0-p645) [gem]" level="application" />
@@ -180,6 +182,7 @@
     <orderEntry type="library" scope="PROVIDED" name="treetop (v1.4.15, RVM: ruby-2.0.0-p645) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tzinfo (v0.3.44, RVM: ruby-2.0.0-p645) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="uglifier (v2.7.1, RVM: ruby-2.0.0-p645) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="warden (v1.0.6, RVM: ruby-2.0.0-p645) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="xpath (v2.0.0, RVM: ruby-2.0.0-p645) [gem]" level="application" />
   </component>
   <component name="RModuleSettingsStorage">
