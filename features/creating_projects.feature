@@ -6,12 +6,13 @@ Feature: Creating projects
   Background:
     Given there are the following users:
       | email      | password | admin |
-      | admin@ticketee.com | password | true  |
+      | admin@ticketee.com | password | true |
     And I am signed in as them
     Given I am on the homepage
     When I follow "New project"
 
   Scenario: Creating a project
+    And I should see "name"
     And I fill in "name" with "TextMate 2"
     And I press "Create Project"
     Then I should see "Project has been created."
