@@ -1,4 +1,5 @@
 class TicketsController < ApplicationController
+
   before_filter  :authenticate_user!
   before_filter :find_project
   before_filter :find_ticket, :only => [:show,
@@ -7,7 +8,7 @@ class TicketsController < ApplicationController
                             :destroy]
   before_filter :authorize_create!, :only => [:new, :create]
   #isso nao ta funcionando -> before_filter :authorize_update!, :only => [:edit, :update]
-
+  #isso tb nao ta funcionando before_filter :authorize_delete!, :only => :destroy
   def authorize_update!
     if !current_user.admin? && cannot?(:"edit tickets", @project)
       flash[:alert] = "You cannot edit tickets on this project."
@@ -66,6 +67,12 @@ class TicketsController < ApplicationController
   end
   def show
 
+  end
+  def authorize_delete!
+    if !current_user.admin? && cannot?(:"delete tickets", @project)
+      flash[:alert] = "You cannot delete tickets from this project."
+      redirect_to @project
+    end
   end
 
 end
