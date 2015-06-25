@@ -135,6 +135,7 @@
     <orderEntry type="library" scope="PROVIDED" name="bcrypt-ruby (v3.1.5, RVM: ruby-2.0.0-p645) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="builder (v3.0.4, RVM: ruby-2.0.0-p645) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bundler (v1.9.9, RVM: ruby-2.0.0-p645) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="cancan (v1.6.10, RVM: ruby-2.0.0-p645) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="capybara (v2.4.4, RVM: ruby-2.0.0-p645) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="coffee-rails (v3.2.2, RVM: ruby-2.0.0-p645) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="coffee-script (v2.4.1, RVM: ruby-2.0.0-p645) [gem]" level="application" />

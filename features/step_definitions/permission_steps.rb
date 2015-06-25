@@ -11,10 +11,14 @@ end
 Given /^"([^"]*)" can edit tickets in the "([^"]*)" project$/ do |user, project|
   Permission.create!(:user => User.find_by_email!(user),
                      :thing => Project.find_by_name!(project),
-                     :action => "create tickets")
+                     :action => "edit tickets")
 end
+
+
+
+
 Given /^"([^"]*)" can delete tickets in the "([^"]*)" project$/ do |user, project|
   Permission.create!(:user => User.find_by_email!(user),
                      :thing => Project.find_by_name!(project),
-                     :action => "create tickets")
+                     :action => "delete tickets")
 end

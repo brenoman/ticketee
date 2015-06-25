@@ -7,8 +7,8 @@ class TicketsController < ApplicationController
                             :update,
                             :destroy]
   before_filter :authorize_create!, :only => [:new, :create]
-  #isso nao ta funcionando -> before_filter :authorize_update!, :only => [:edit, :update]
-  #isso tb nao ta funcionando before_filter :authorize_delete!, :only => :destroy
+  before_filter :authorize_update!, :only => [:edit, :update]
+  before_filter :authorize_delete!, :only => :destroy
   def authorize_update!
     if !current_user.admin? && cannot?(:"edit tickets", @project)
       flash[:alert] = "You cannot edit tickets on this project."
