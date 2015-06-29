@@ -9,6 +9,7 @@ class TicketsController < ApplicationController
   before_filter :authorize_create!, :only => [:new, :create]
   before_filter :authorize_update!, :only => [:edit, :update]
   before_filter :authorize_delete!, :only => :destroy
+
   def authorize_update!
     if !current_user.admin? && cannot?(:"edit tickets", @project)
       flash[:alert] = "You cannot edit tickets on this project."
@@ -25,6 +26,7 @@ class TicketsController < ApplicationController
 
   def new
     @ticket = @project.tickets.build
+    3.times { @ticket.assets.build }
   end
   def create
     @ticket = @project.tickets.build(params[:ticket])
